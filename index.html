@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/b19b50badb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Logo -->
-        <div>
-            <img src="/img/logo.png" alt="logotipo">
+    <header class="header">
+        <div class="header__logo">
+            <a href="/index.html" class="link">
+                <img src="/img/shared/logo.png" alt="logotipo" class="logo">
+            </a>
         </div>
 
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">Horarios</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Actividades educativas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="header__nav-bar">
+            <div class="nav-bar__option"><a href="#" class="link btn">Horarios</a></div>
+            <div class="nav-bar__option"><a href="#" class="link btn">Eventos</a></div>
+            <div class="nav-bar__option"><a href="#" class="link btn">Actividades Educativas</a></div>
+            <div class="nav-bar__option"><a href="#" class="link btn">Contacto</a></div>
+        </nav>
     </header>
 
     <main>
@@ -32,79 +30,88 @@
 
         <section>
             <header>
-                <h2>Animal 1</h2>
+                <h2>León</h2>
             </header>
             <div>
                 <img src="/img/gallery/lion/lion_1.jpg" alt="imagen-animal-1">
             </div>
             <div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis. Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam assumenda nulla sit fugiat dolorem, deleniti molestiae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis.
+                    Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam
+                    assumenda nulla sit fugiat dolorem, deleniti molestiae?
                 </p>
             </div>
         </section>
 
         <section>
             <header>
-                <h2>Animal 2</h2>
+                <h2>Mono</h2>
             </header>
             <div>
                 <img src="/img/gallery/monkey/monkey_1.jpg" alt="imagen-animal-2">
             </div>
             <div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis. Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam assumenda nulla sit fugiat dolorem, deleniti molestiae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis.
+                    Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam
+                    assumenda nulla sit fugiat dolorem, deleniti molestiae?
                 </p>
             </div>
         </section>
 
         <section>
             <header>
-                <h2>Animal 3</h2>
+                <h2>Jirafa</h2>
             </header>
             <div>
                 <img src="/img/gallery/giraffe/giraffe_1.jpg" alt="imagen-animal-3">
             </div>
             <div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis. Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam assumenda nulla sit fugiat dolorem, deleniti molestiae?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, officia officiis.
+                    Consequuntur corporis numquam, sequi eum voluptates, sed qui blanditiis voluptas quidem magnam
+                    assumenda nulla sit fugiat dolorem, deleniti molestiae?
                 </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <!-- Logo -->
-        <div>
-            <img src="/img/logo.png" alt="logotipo">
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer__logo">
+                <a href="/index.html" class="link">
+                    <img src="/img/shared/logo.png" alt="logotipo" class="logo">
+                </a>
+            </div>
+
+            <section class="footer__info">
+                <div>
+                    <h2>Contacto</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> Guayllabamba / Quito-Ecuador
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> 5115542
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i> 0978338838
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> contacto@zoologico.com
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com"
+                                target="_blank">zoologico_ecu</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-
-        <section>
-            <div>
-                <h2>Contacto</h2>
-            </div>
-            <div>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-location-dot"></i> Guayllabamba / Quito-Ecuador
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-phone"></i> 5115542
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-whatsapp"></i> 0978338838
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i> contacto@zoologico.com
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com" target="_blank">zoologico_ecu</a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div>
+        <div class="footer__copyright">
             &#169; 2024 - 2025 Zoológico Copyright | All Rights Reserved
         </div>
     </footer>

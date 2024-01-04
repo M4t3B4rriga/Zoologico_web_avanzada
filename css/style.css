@@ -60,6 +60,51 @@ body {
     border: none;
 }
 
+.main__header {
+    text-align: center;
+}
+
+.main__section {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.main__section__header {
+    text-align: center;
+}
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card__header {
+    text-align: center;
+}
+
+.card__body {
+    height: 200px;
+}
+
+.card__footer {
+    text-align: justify;
+    padding: 0 15px;
+}
+
+.card__img {
+    height: 100%;
+    width: 100%;
+}
+
 .footer__info {
     display: grid;
     grid-template-columns: 25% 1fr 1fr;
@@ -72,7 +117,7 @@ body {
     padding: 2px 5px;
 }
 
-.footer__section__title {
+.footer__section__header {
     text-align: center;
 }
 

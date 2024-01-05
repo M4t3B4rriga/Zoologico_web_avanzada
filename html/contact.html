@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/b19b50badb.js" crossorigin="anonymous"></script>
+   
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__section header__logo">
+            <a href="../index.html" class="link">
+                <img src="../img/shared/logo.png" alt="logotipo" class="logo">
+            </a>
+        </div>
+
+        <nav class="header__section header__nav-bar">
+            <div class="nav-bar__option"><a href="../html/events.html" class="link btn">Eventos</a></div>
+            <div class="nav-bar__option"><a href="../html/activities.html" class="link btn">Actividades Educativas</a></div>
+            <div class="nav-bar__option"><a href="../html/contact.html" class="link btn">Contacto</a></div>
+        </nav>
+    </header>
+    <p>&nbsp;</p>
+    <main>
+        <div align="center" >
+            <div class="container3" id="presentacion" style="display:block;" >
+                <h2>Dejame tus datos y un comentario para comunicarnos contigo</h2>
+                <fieldset> 
+                <div style="padding:1px 10px;height:300px; text-align: center;">
+                    <!--creamos un fomrulario para los datos que tengamos en el-->
+                        <form name="form" id="miFormulario" onsubmit="enviar(event)">
+                           
+                                <legend>FORMULARIO</legend>
+                          <p>&nbsp;</p>
+                          <p>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" oninput="validarNombreAlEscribir()" required>
+                            <span id="nombreError" class="mensaje-error"></span>
+                          </p>
+                          <p>
+                            <label for="correo">Correo:</label>
+                            <input type="email" name="correo" id="correo" required>
+                            <span id="correoError" class="mensaje-error"></span>
+                          </p>
+                          <p>
+                            <label for="textfield">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" pattern="\d{10}" title="Debe contener exactamente 10 dígitos." required oninput="validarTelefonoSoloNumeros(event)">
+                          </p>
+                          <p>
+                            <label for="comentario">Comentario:</label>
+                            <textarea id="comentario" name="comentario" rows="4" required></textarea><br>
+                    
+                          </p>
+                       
+                      <input type="submit" name="button" id="button" value="Enviar" onclick="enviar() "class="boton-zoologico">
+                </fieldset>
+                    </form>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <p>&nbsp;</p>
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__section footer__logo">
+                <a href="../index.html" class="link">
+                    <img src="../img/shared/logo.png" alt="logotipo" class="logo">
+                </a>
+            </div>
+
+            <section class="footer__section">
+                <div class="footer__section__header">
+                    <h2>Contacto</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i> Guayllabamba / Quito-Ecuador
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i> 5115542
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i> 0978338838
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i> contacto@zoologico.com
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="footer__section">
+                <div class="footer__section__header">
+                    <h2>Redes sociales</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i> <a href="https://www.facebook.com" target="_blank">zoologico_ecu</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com" target="_blank">zoologico_ecu</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-tiktok"></i> <a href="https://www.tiktok.com" target="_blank">zoologico_ecu</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer__section copyright">
+            &#169; 2024 - 2025 Zoológico Copyright | All Rights Reserved
+        </div>
+    </footer>
+    <script src="../js/script.js" defer></script>
+</body>
+
+</html>

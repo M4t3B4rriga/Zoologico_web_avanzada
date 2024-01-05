@@ -80,6 +80,11 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .card {
     width: 25%;
@@ -195,4 +200,80 @@ body {
     85% {margin-left: -250%;}
     95% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+.container3 {
+    position:static;
+    color: white;
+    align-items:center;
+    top: 50px;
+    padding: 40px;
+    width: 70%;
+    background-image: url('../img/gallery/lion/lion_1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color:  rgba(255, 255, 255, 0.699); 
+    border: 2px solid gray; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+   
+  }
+
+  .boton-zoologico {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 7px 30px; 
+    font-size: 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo */
+}
+
+.boton-zoologico:hover {
+    background-color: #a05045; 
+}
+
+.container2 {
+    position:static;
+    align-items:center;
+    top: 50px;
+    padding: 40px;
+    width: 70%;
+    background-color:  rgba(255, 255, 255, 0.699); /* Fondo transparente */
+    border: 2px solid gray; /* Bordes blancos */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+   
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-rows: repeat(4, 100px); /* 4 filas de altura fija 100px */
+    gap: 10px; /* Espacio entre las cajas */
+  }
+
+  .grid-item {
+    border: 1px solid #ccc;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @keyframes agrandarLetra {
+    0% {
+        font-size: 16px;
+    }
+    100% {
+        font-size: 24px;
+    }
+}
+
+
+.letra-animada:hover {
+    animation: agrandarLetra 5s; /* La animación dura 3 segundos y se repite infinitamente */
 }

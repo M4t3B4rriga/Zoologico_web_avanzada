@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    background-color: #1e1e1e;
+    color: white;
 }
 
 .logo {
@@ -15,7 +17,7 @@ body {
     top: 0;
     display: grid;
     grid-template-columns: 25% auto;
-    background-color: white;
+    background-color: #1e1e1e;
     border-bottom: 1px solid black;
 }
 
@@ -42,7 +44,7 @@ body {
 
 .link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .btn {
@@ -65,8 +67,8 @@ body {
 }
 
 .main__section {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main__section__header {
@@ -82,9 +84,16 @@ body {
 .card {
     width: 25%;
     margin-right: 20px;
-    border: 1px solid black;
+    border: 1px solid #1f1f1f;
     border-radius: 15px;
     margin-bottom: 20px;
+    background-color: white;
+    color: black;
+}
+
+.card--center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card__header {
@@ -92,17 +101,29 @@ body {
 }
 
 .card__body {
-    height: 200px;
+    height: max-content;
 }
 
 .card__footer {
-    text-align: justify;
+    text-align: left;
     padding: 0 15px;
+    margin-bottom: 15px;
 }
 
 .card__img {
     height: 100%;
     width: 100%;
+}
+
+.card__table {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card__table td:nth-child(2) {
+    text-align: right;
 }
 
 .slider {
@@ -154,6 +175,10 @@ body {
 .copyright {
     text-align: center;
     margin: 10px 0;
+}
+
+#gallery, #schedule {
+    background-color: black;
 }
 
 @keyframes slide-animation {
